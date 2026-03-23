@@ -275,10 +275,21 @@ export function ProjectsSection() {
                       Live site
                     </a>
                   ) : (
-                    <p className="w-full text-sm text-muted-foreground">
-                      Chrome extension — clone or load unpacked from the GitHub
-                      README.
-                    </p>
+                    <a
+                      href={selectedProject.video}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`cursor-hover flex items-center gap-2 rounded-lg px-6 py-3 font-semibold text-background transition-opacity hover:opacity-90 ${
+                        selectedProject.color === "neon-green"
+                          ? "bg-neon-green"
+                          : selectedProject.color === "neon-cyan"
+                            ? "bg-neon-cyan"
+                            : "bg-neon-purple"
+                      }`}
+                    >
+                      <ExternalLink className="h-5 w-5" />
+                      Watch video
+                    </a>
                   )}
                 </div>
               </div>
