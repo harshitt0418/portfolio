@@ -44,6 +44,7 @@ const projects = [
     color: "neon-purple",
     image: "/projects/jarvis.jpg",
     github: "https://github.com/harshitt0418/jarvis-browser-copilot",
+    video: "https://youtu.be/2KHoCO7Ei5Y",
     stats: { commands: "200+", ai: "Dual LLM", features: "Voice + Chat" },
   },
 ]
